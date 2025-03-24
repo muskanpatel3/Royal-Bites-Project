@@ -1,0 +1,178 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column ;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+.f-info-links, 
+.f-info-socials,
+.f-info-brand {
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    margin-right: 1rem ;
+    font-size: 1.2rem; 
+}
+.f-info{
+    text-align: center;
+    height: 8rem ;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+ /* Crds */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0;
+}
+.card-text p {
+    font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+/* New page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+/* edit page */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+/* show page */
+.show-img {
+    height: 30vh;  
+}
+.btns{
+    display: flex;
+}
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Hero Section Styling */
+#hero {
+    position: relative;
+    background-color: #333; /* Fallback color */
+    color: #fff;
+    padding: 100px 0; /* Add padding for spacing */
+    text-align: center;
+    background-image: url('/images/res6.jpg');
+    /* Add your background image */
+    background-size: cover; /* Ensure the image covers the full area */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+#hero img {
+    display: none; /* Remove the overlay image as it's no longer needed */
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+#hero span {
+    color: #ff5e5b; /* Highlight color */
+}
+
+#hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+
+#hero .cta-btn {
+    background-color: #ff5e5b; /* Button background color */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .cta-btn:hover {
+    background-color: #ff3b3a; /* Button hover effect */
+}
+
+@media (max-width: 767px) {
+    #hero h2 {
+        font-size: 2rem; /* Smaller font on mobile */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Smaller font on mobile */
+    }
+
+    #hero .cta-btn {
+        font-size: 0.9rem; /* Smaller buttons on mobile */
+        padding: 10px 25px;
+    }
+}
