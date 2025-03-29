@@ -1,38 +1,33 @@
 <% layout("/layouts/boilerplate") %>
-<body>
-  <% layout("/layouts/boilerplate") %>
 
-<section class="book-a-table-section">
-  <div class="container">
-    <h2 class="text-center mb-4">Book a Table</h2>
-    <form action="/book-a-table" method="POST">
-      <div class="mb-3">
-        <label for="name" class="form-label">Your Name</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-      </div>
-      <div class="mb-3">
-        <label for="phone" class="form-label">Your Phone Number</label>
-        <input type="text" class="form-control" id="phone" name="phone" required>
-      </div>
-      <div class="mb-3">
-        <label for="date" class="form-label">Booking Date</label>
-        <input type="date" class="form-control" id="date" name="date" required>
-      </div>
-      <div class="mb-3">
-        <label for="time" class="form-label">Booking Time</label>
-        <input type="time" class="form-control" id="time" name="time" required>
-      </div>
-      <div class="mb-3">
-        <label for="people" class="form-label">Number of People</label>
-        <input type="number" class="form-control" id="people" name="people" required>
-      </div>
-      <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Confirm Booking</button>
-      </div>
-    </form>
-  </div>
-</section>
+  <body>
+    <% layout("/layouts/boilerplate") %>
+      <div class="row mt-3">
+        <div class="col-8 offset-2">
+          <br><br>
+          <h3>Book A Table</h3>
+          <form method="POST" action="/listings">
+            <div class="mb-3">
+              <label for="phome" class="form-label">Your Phone Number</label>
+              <input type="text" class="form-control" id="name" name="listing[phone]" required>
+            </div>
+            <div class="mb-3">
+              <label for="booking-date" class="form-label">Booking Date</label>
+              <input type="date" class="form-control" id="booking-date" name="booking[date]" required>
+            </div>
+            <div class="mb-3">
+              <label for="booking-time" class="form-label">Booking Time</label>
+              <input type="time" class="form-control" id="booking-time" name="booking[time]" required>
+            </div>
+            <div class="mb-3">
+              <label for="num-people" class="form-label">Number of People</label>
+              <input type="number" class="form-control" id="num-people" name="booking[people]" min="1" required>
+            </div>
+            <div class="mb-3 text-center">
+              <button type="submit" class="btn btn-primary">Confirm Booking</button>
+            </div>
+          </form>
 
+        </div>
 
-</body>
-</html>
+      </div>

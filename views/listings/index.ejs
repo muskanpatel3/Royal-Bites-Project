@@ -1,119 +1,179 @@
 <% layout("/layouts/boilerplate") %>
-<body>
-  <section id="hero" class="hero section dark-background">
 
-    <img src="/images/restaurant1" alt="" data-aos="fade-in">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
-          <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>Restaurantly</span></h2>
-          <p data-aos="fade-up" data-aos-delay="200">Delivering great food for more than 18 years!</p>
-          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="#menu" class="cta-btn">Our Menu</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section><!-- /Hero Section -->
-
-
-    <!-- 🍽️ Food Items Display Section -->
-    <section class="food-display text-center py-5">
-        <div class="container">
-            <!-- First Row -->
-            <div class="row mb-4">
-                <div class="col-md-2">
-                    <img src="/images/6.jpg" class="img-fluid rounded" alt="Biryani">
-                    <h5 class="mt-2">Biryani</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/8.jpg" class="img-fluid rounded" alt="Ice Cream">
-                    <h5 class="mt-2">Ice Cream</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/7.jpg" class="img-fluid rounded" alt="Dosa">
-                    <h5 class="mt-2">Dosa</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/5.jpg" class="img-fluid rounded" alt="Pizza">
-                    <h5 class="mt-2">Pizza</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/10.jpg" class="img-fluid rounded" alt="Burger">
-                    <h5 class="mt-2">Burger</h5>
-                </div>
-            </div>
-
-            <!-- Second Row -->
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="/images/1.jpg" class="img-fluid rounded" alt="Pasta">
-                    <h5 class="mt-2">Poha</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/4.jpg" class="img-fluid rounded" alt="Samosa">
-                    <h5 class="mt-2">Cake</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/3.jpg" class="img-fluid rounded" alt="Momos">
-                    <h5 class="mt-2">PawBhaji</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/9.jpg" class="img-fluid rounded" alt="French Fries">
-                    <h5 class="mt-2">French Fries</h5>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/11.jpg" class="img-fluid rounded" alt="Cake">
-                    <h5 class="mt-2">Pasta</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 🌟 Discover Best Restaurants Section -->
-    <section class="discover-section text-center py-5">
-        <div class="container">
-            <h2 class="mb-4">Discover Best Restaurants on Dineout</h2>
-            <p class="mb-4">Find and book a table at the best restaurants near you!</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/images/restaurant1.jpg" class="card-img-top" alt="Restaurant 1">
-                        <div class="card-body">
-                            <h5 class="card-title">The Gourmet Spot</h5>
-                            <p class="card-text">A fine dining experience with exotic flavors.</p>
-                            <a href="/listings/booking" class="btn btn-primary">Book a Table</a>
-                        </div>
+    <body>
+        <section id="hero" class="hero section ">
+            <div class="container">
+                <div class="hero">
+                    <h1>Order food & groceries. Discover best restaurants.</h1>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Enter your delivery location">
+                        <input type="text" placeholder="Search for restaurant, item or more">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/images/restaurant2.jpg" class="card-img-top" alt="Restaurant 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Spicy Treat</h5>
-                            <p class="card-text">Best spicy delicacies in town.</p>
-                            <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                <div class="row text-center discount-card">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-card">
+                            <h3>FOOD DELIVERY</h3>
+                            <p>From Restaurants</p>
+                            <p>UPTO 60% OFF</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/images/res3.jpg" class="card-img-top" alt="Restaurant 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Ocean Bites</h5>
-                            <p class="card-text">Fresh seafood and oceanic flavors.</p>
-                            <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                    <div class="col-md-4 col-sm-6 discount-card">
+                        <div class="service-card">
+                            <h3>DINEOUT</h3>
+                            <p>Eat Out & Save More</p>
+                            <p>UPTO 50% OFF</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 discount-card">
+                        <div class="service-card">
+                            <h3>GENIE</h3>
+                            <p>Pick-up & Drop</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section><!-- /Hero Section -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+        <!-- 🍽️ Food Items Display Section -->
+        <section id="menu" class="food-display text-center py-5">
+            <div class="container">
+                <h2 class="mb-3 mt-5">Our Menu</h2>
+                <!-- First Row -->
+                <div class="row mb-4 ">
+                    <div class="col-md-2">
+                        <img src="/images/6.jpg" class="img-fluid rounded" alt="Biryani">
+                        <h5 class="mt-2">Biryani</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/8.jpg" class="img-fluid rounded" alt="Ice Cream">
+                        <h5 class="mt-2">Ice Cream</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/7.jpg" class="img-fluid rounded" alt="Dosa">
+                        <h5 class="mt-2">Dosa</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/5.jpg" class="img-fluid rounded" alt="Pizza">
+                        <h5 class="mt-2">Pizza</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/10.jpg" class="img-fluid rounded" alt="Burger">
+                        <h5 class="mt-2">Burger</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/10.jpg" class="img-fluid rounded" alt="Burger">
+                        <h5 class="mt-2">Burger</h5>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="/images/1.jpg" class="img-fluid rounded" alt="Pasta">
+                        <h5 class="mt-2">Poha</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/4.jpg" class="img-fluid rounded" alt="Samosa">
+                        <h5 class="mt-2">Cake</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/3.jpg" class="img-fluid rounded" alt="Momos">
+                        <h5 class="mt-2">PawBhaji</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/9.jpg" class="img-fluid rounded" alt="French Fries">
+                        <h5 class="mt-2">French Fries</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/11.jpg" class="img-fluid rounded" alt="Cake">
+                        <h5 class="mt-2">Pasta</h5>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="/images/10.jpg" class="img-fluid rounded" alt="Burger">
+                        <h5 class="mt-2">Burger</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 Discover Best Restaurants Section -->
+        <section id="restaurant" class="discover-section text-center py-5">
+            <div class="container">
+                <h2 class="mb-4 mt-5">Discover Best Restaurants on Dineout</h2>
+                <p class="mb-4">Find and book a table at the best restaurants near you!</p>
+
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+                    <div class="col-md-4">
+                        <div class="card col">
+                            <img src="/images/restaurant1.jpg" class="card-img-top" alt="Restaurant 1">
+                            <div class="card-body">
+                                <h5 class="card-title">The Gourmet Spot</h5>
+                                <p class="card-text">A fine dining experience with exotic flavors.</p>
+                                <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card col">
+                            <img src="/images/restaurant2.jpg" class="card-img-top" alt="Restaurant 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Spicy Treat</h5>
+                                <p class="card-text">Best spicy delicacies in town.</p>
+                                <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card col">
+                            <img src="/images/res3.jpg" class="card-img-top" alt="Restaurant 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ocean Bites</h5>
+                                <p class="card-text">Fresh seafood and oceanic flavors.</p>
+                                <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/images/restaurant1.jpg" class="card-img-top" alt="Restaurant 1">
+                            <div class="card-body">
+                                <h5 class="card-title">The Gourmet Spot</h5>
+                                <p class="card-text">A fine dining experience with exotic flavors.</p>
+                                <a href="/listings/booking" class="btn btn-primary">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/images/restaurant2.jpg" class="card-img-top" alt="Restaurant 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Spicy Treat</h5>
+                                <p class="card-text">Best spicy delicacies in town.</p>
+                                <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/images/res3.jpg" class="card-img-top" alt="Restaurant 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ocean Bites</h5>
+                                <p class="card-text">Fresh seafood and oceanic flavors.</p>
+                                <a href="/listings/book-a-table" class="btn btn-primary">Book a Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+    </html>

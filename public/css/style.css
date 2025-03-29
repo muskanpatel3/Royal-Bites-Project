@@ -1,9 +1,134 @@
 body {
-    font-family: "Plus Jakarta Sans", sans-serif !important;
-    display: flex;
-    flex-direction: column ;
-    min-height: 100vh;
+    /* background-color: #ff5200 !important; */
+    color: white;
 }
-.container{
-    flex: 1;
+
+ .container {
+    max-width: 100% !important;  /* Override Bootstrap’s max-width */
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.hero.section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+
+/* navbar */
+.navbar{
+    height: 4.5rem;
+    background-color:white;
+}
+
+.navbar-brand{
+    font-size: 2rem !important;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 6rem;
+    background-color: #ebebeb ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+
+/* Hero Section Styling */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: orangered;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.service-card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.discount-card{
+   height: 20rem !important;
+}
+
+/* card */
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+} 
+
+.card-img-top{
+    /* border-radius: 1rem !important; */
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+
+/* Our manue */
+
+.food-display img {
+    width: 180px;  /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 10px; /* Optional: Rounds the corners */
 }

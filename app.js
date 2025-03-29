@@ -44,21 +44,22 @@ app.get('/signup', (req, res) => {
 });
 
 
-app.get("/listings", async (req, res) => {
-  try {
-    const listings = await Listing.find(); // Fetch all listings from the database
-    res.render("listings/index", { listings });
-  } catch (err) {
-    console.log(err);
-    res.send("Error fetching listings");
-  }
-});
+// app.get("/listings", async (req, res) => {
+//   try {
+//     const listings = await Listing.find(); // Fetch all listings from the database
+//     res.render("listings/index", { listings });
+//   } catch (err) {
+//     console.log(err);
+//     res.send("Error fetching listings");
+//   }
+// });
 
 
 // Route to handle "Book a Table" click
 app.get('/listings/book-a-table', (req, res) => {
   res.render("listings/book-a-table.ejs");
 });
+
 
 app.post("/book-a-table", (req, res) => {
   const { name, phone, date } = req.body;
